@@ -1,0 +1,6 @@
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/hajimehoshi/wasmserve v0.0.0-20200921065616-c95bb0de031e h1:NrmopPQTXcpEsajEa9E8cQTKUEBgWZ1cF0FmFM3Vfcg=
+github.com/hajimehoshi/wasmserve v0.0.0-20200921065616-c95bb0de031e/go.mod h1:DI8IeyYdAkNS/K9JvLFBab7cmOkvoLCvMS9U8hLP2tw=
+github.com/hexops/vecty v0.5.1-0.20200925084631-56dda858f26b h1:ftEECubEyf2HdKUaMC0jw90qpSrUApdLLsHO/tRHBvQ=
+github.com/hexops/vecty v0.5.1-0.20200925084631-56dda858f26b/go.mod h1:hVOPHAhrkXTf/9fl31Bpn2QvkW2ZOUZ0I3b3cohwCpI=
