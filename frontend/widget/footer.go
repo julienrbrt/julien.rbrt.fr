@@ -12,7 +12,7 @@ type FooterWidget struct {
 }
 
 // Render renders the footer
-func (h *FooterWidget) Render() vecty.ComponentOrHTML {
+func (w *FooterWidget) Render() vecty.ComponentOrHTML {
 	return elem.Footer(
 		vecty.Markup(vecty.Class("footer")),
 		elem.Div(
@@ -23,7 +23,7 @@ func (h *FooterWidget) Render() vecty.ComponentOrHTML {
 			),
 		),
 		elem.Span(
-			vecty.Text("Hosted on Scaleway"),
+			vecty.Text("Hosted on DigitalOcean"),
 		),
 	)
 }

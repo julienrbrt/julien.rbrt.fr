@@ -14,8 +14,8 @@ type About struct {
 
 // Render implements the vecty.Component interface.
 func (p *About) Render() vecty.ComponentOrHTML {
-	return elem.Body(
-		&widget.TitleWidget{},
+	return elem.Div(
+		&widget.HeaderWidget{Title: "julien.rbrt.fr"},
 		elem.Section(
 			vecty.Markup(vecty.Class("main")),
 			elem.Heading1(vecty.Text("I am Julien Robert, Go backend software developer, currently living in the Netherlands")),

@@ -15,6 +15,8 @@ func NewRouter() *mux.Router {
 	router.PathPrefix("/public/").Handler(http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
 	// not found route defaults to home
 	router.NotFoundHandler = http.HandlerFunc(handleHome)
+	// add logger middleware
+	router.Use(Logger)
 
 	return router
 }

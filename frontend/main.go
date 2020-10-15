@@ -7,5 +7,5 @@ import (
 
 func main() {
 	vecty.SetTitle("julien.rbrt.fr")
-	vecty.RenderBody(&page.About{})
+	vecty.RenderBody(&page.Body{})
 }
