@@ -12,7 +12,7 @@ func (p *CV) renderSkills() *vecty.HTML {
 		elem.UnorderedList(
 			&widget.ListItemWidget{
 				Prefix: "General:",
-				Title:  "Computer Science, Mobile Development, Backend Development, Data Analysis, Data Visualization",
+				Title:  "Computer Science, Mobile Development, Backend Development, Data Analysis",
 			},
 			&widget.ListItemWidget{
 				Prefix: "Programming:",

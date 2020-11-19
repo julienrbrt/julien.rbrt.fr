@@ -17,7 +17,7 @@ func (p *CV) renderExperience() *vecty.HTML {
 				Location:    "Enschede, Netherlands",
 				JobTitle:    "Software Developer",
 				Company:     "Sqills",
-				Description: "Go Backend Developer. Build micro-services for Sqills S3 Passenger product.",
+				Description: "Go Backend Developer. Working on S3 Passenger.",
 			},
 			&widget.ExperienceWidget{
 				BeginDate: time.Date(2019, time.June, 1, 0, 0, 0, 0, time.UTC),
