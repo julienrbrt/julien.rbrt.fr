@@ -18,7 +18,12 @@ func (p *About) Render() vecty.ComponentOrHTML {
 		&widget.HeaderWidget{Title: "julien.rbrt.fr"},
 		elem.Section(
 			vecty.Markup(vecty.Class("main")),
-			elem.Heading1(vecty.Text("I am Julien Robert, Go backend software developer, currently living in the Netherlands")),
+			elem.Heading1(vecty.Text("I am "),
+				elem.Anchor(
+					vecty.Markup(prop.Href("https://julien.rbrt.fr/cv")),
+					vecty.Text("Julien Robert"),
+				),
+				vecty.Text(", Software Developer, currently living in the Netherlands.")),
 			elem.Heading1(vecty.Text("Dart, Go and data analysis enthusiast, you can find my code on "),
 				elem.Anchor(
 					vecty.Markup(prop.Href("https://github.com/julienrbrt")),
