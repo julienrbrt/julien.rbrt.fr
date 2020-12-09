@@ -36,7 +36,8 @@ func (w *ExperienceWidget) renderDate() *vecty.HTML {
 	if endDate == "" {
 		return elem.Span(
 			vecty.Text(fmt.Sprintf("%s - ", beginDate)),
-			elem.Emphasis(vecty.Text("Present, ")),
+			elem.Emphasis(vecty.Text("Present")),
+			vecty.Text(", "),
 		)
 	}
 
