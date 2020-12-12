@@ -20,7 +20,7 @@ func (p *CV) renderSkills() *vecty.HTML {
 			},
 			&widget.ListItemWidget{
 				Prefix: "Tools & Techniques:",
-				Title:  "gRPC, REST, Docker, protobuf, PostgreSQL, MariaDB, Redis",
+				Title:  "REST, Docker, PostgreSQL, MariaDB, Redis",
 			},
 			&widget.ListItemWidget{
 				Prefix: "OS:",
