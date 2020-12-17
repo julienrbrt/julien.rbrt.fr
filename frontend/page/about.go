@@ -29,12 +29,7 @@ func (p *About) Render() vecty.ComponentOrHTML {
 					vecty.Markup(prop.Href("https://github.com/julienrbrt")),
 					vecty.Text("GitHub"),
 				),
-				vecty.Text(" or discover my side projects "),
-				elem.Anchor(
-					vecty.Markup(prop.Href("https://delice.app")),
-					vecty.Text("Délice"),
-				),
-				vecty.Text(" and "),
+				vecty.Text(" or check out my side project "),
 				elem.Anchor(
 					vecty.Markup(prop.Href("https://woningfinder.nl")),
 					vecty.Text("WoningFinder"),
