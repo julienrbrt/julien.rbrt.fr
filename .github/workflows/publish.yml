@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+on: [push]
+env:
+  GOOS: js
+  GOARCH: wasm
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Set up Go 📦
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+
+      - name: Install and Build 🔧
+        run: |
+          go build -o public/main.wasm ./cmd/render
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: public
