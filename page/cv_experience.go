@@ -17,7 +17,7 @@ func (p *CV) renderExperience() *vecty.HTML {
 				Location:    "Remote",
 				JobTitle:    "Developer Relations Engineer",
 				Company:     "Interchain GmbH",
-				Description: "Working on the Cosmos SDK ⚛ and helping other developers using it.",
+				Description: "Working on the Cosmos SDK ⚛ and helping other developers to use it.",
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2020, time.August, 10, 0, 0, 0, 0, time.UTC),
@@ -25,7 +25,7 @@ func (p *CV) renderExperience() *vecty.HTML {
 				Location:    "Enschede, Netherlands",
 				JobTitle:    "Software Developer",
 				Company:     "Sqills",
-				Description: "Go Backend Developer. Helped building S3 Passenger.",
+				Description: "Go Backend Developer. Worked on S3 Passenger.",
 			},
 			&component.Experience{
 				BeginDate: time.Date(2019, time.June, 1, 0, 0, 0, 0, time.UTC),
