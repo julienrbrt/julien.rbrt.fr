@@ -44,22 +44,22 @@ func (p *CV) renderExperience() *vecty.HTML {
 				Company:     "Nonsense Technical Solutions",
 				Description: `Go Backend Developer and Flutter Application Developer.`,
 			},
-			&component.Experience{
-				BeginDate:   time.Date(2018, time.June, 1, 0, 0, 0, 0, time.UTC),
-				EndDate:     time.Date(2018, time.November, 1, 0, 0, 0, 0, time.UTC),
-				Location:    "Enschede, Netherlands",
-				JobTitle:    "Customer Service Representative",
-				Company:     "Xtrasource",
-				Description: "French-Speaking Sales Customer Service for Basic-Fit.",
-			},
-			&component.Experience{
-				BeginDate:   time.Date(2017, time.July, 1, 0, 0, 0, 0, time.UTC),
-				EndDate:     time.Date(2018, time.July, 1, 0, 0, 0, 0, time.UTC),
-				Location:    "Enschede, Netherlands",
-				JobTitle:    "Crew Member",
-				Company:     "McDonald's",
-				Description: "Made hamburgers.",
-			},
+			// &component.Experience{
+			// 	BeginDate:   time.Date(2018, time.June, 1, 0, 0, 0, 0, time.UTC),
+			// 	EndDate:     time.Date(2018, time.November, 1, 0, 0, 0, 0, time.UTC),
+			// 	Location:    "Enschede, Netherlands",
+			// 	JobTitle:    "Customer Service Representative",
+			// 	Company:     "Xtrasource",
+			// 	Description: "French-Speaking Sales Customer Service for Basic-Fit.",
+			// },
+			// &component.Experience{
+			// 	BeginDate:   time.Date(2017, time.July, 1, 0, 0, 0, 0, time.UTC),
+			// 	EndDate:     time.Date(2018, time.July, 1, 0, 0, 0, 0, time.UTC),
+			// 	Location:    "Enschede, Netherlands",
+			// 	JobTitle:    "Crew Member",
+			// 	Company:     "McDonald's",
+			// 	Description: "Made hamburgers.",
+			// },
 		),
 	)
 }
