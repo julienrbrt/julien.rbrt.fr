@@ -20,7 +20,7 @@ jobs:
           go build -o public/main.wasm ./cmd/render
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: gh-pages
           folder: public
