@@ -24,7 +24,7 @@ func (p *About) Render() vecty.ComponentOrHTML {
 					vecty.Text("Julien Robert"),
 				),
 				vecty.Text(", Software Developer, currently living in the Netherlands.")),
-			elem.Heading1(vecty.Text("Go and DeFi / Web3 enthusiast, you can find my contributions on "),
+			elem.Heading1(vecty.Text("Go and Crypto enthusiast, you can find my contributions on "),
 				elem.Anchor(
 					vecty.Markup(prop.Href("https://github.com/julienrbrt")),
 					vecty.Text("GitHub"),
