@@ -13,11 +13,19 @@ func (p *CV) renderExperience() *vecty.HTML {
 		vecty.Markup(vecty.Class("cv-entry")),
 		elem.UnorderedList(
 			&component.Experience{
+				BeginDate:   time.Date(2023, time.January, 1, 0, 0, 0, 0, time.UTC),
+				Location:    "Remote",
+				JobTitle:    "Software Engineer",
+				Company:     "Binary Builders",
+				Description: "Cosmos SDK Core Developer ⚛, at Interchain GmbH's spin-off, Binary Builders.",
+			},
+			&component.Experience{
 				BeginDate:   time.Date(2022, time.March, 21, 0, 0, 0, 0, time.UTC),
+				EndDate:     time.Date(2022, time.December, 31, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				JobTitle:    "Developer Relations Engineer",
 				Company:     "Interchain GmbH",
-				Description: "Working on the Cosmos SDK ⚛ and helping other developers to use it.",
+				Description: "Cosmos SDK Core Developer ⚛, helping other developers to use it.",
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2020, time.August, 10, 0, 0, 0, 0, time.UTC),
