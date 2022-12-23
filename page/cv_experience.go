@@ -49,7 +49,7 @@ func (p *CV) renderExperience() *vecty.HTML {
 				EndDate:     time.Date(2019, time.December, 1, 0, 0, 0, 0, time.UTC),
 				Location:    "Enschede, Netherlands",
 				JobTitle:    "Software Developer",
-				Company:     "Nonsense Technical Solutions",
+				Company:     "No Nonsense Technical Solutions",
 				Description: `Go Backend Developer and Flutter Application Developer.`,
 			},
 			// &component.Experience{
