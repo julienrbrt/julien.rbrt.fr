@@ -23,8 +23,10 @@ func (w *Experience) Render() vecty.ComponentOrHTML {
 	return elem.Span(
 		elem.ListItem(
 			w.renderDate(),
-			elem.Strong(vecty.Text(w.JobTitle)),
-			vecty.Text(fmt.Sprintf(" at %s, %s", w.Company, w.Location)),
+			vecty.If(w.JobTitle != "", elem.Strong(vecty.Text(w.JobTitle))),
+			vecty.If(w.JobTitle == "", elem.Strong(vecty.Text(w.Company))),
+			vecty.If(w.JobTitle != "", vecty.Text(fmt.Sprintf(" at %s, %s", w.Company, w.Location))),
+			vecty.If(w.JobTitle == "", vecty.Text(fmt.Sprintf(", %s", w.Location))),
 		),
 		vecty.If(w.Description != "", elem.BlockQuote(vecty.Text(w.Description))),
 	)

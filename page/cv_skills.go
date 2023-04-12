@@ -16,7 +16,7 @@ func (p *CV) renderSkills() *vecty.HTML {
 			},
 			&component.ListItem{
 				Prefix: "Programming:",
-				Title:  "Go, JavaScript (Nuxt.js), Dart (Flutter), SQL",
+				Title:  "Go, JavaScript (Nuxt), Dart (Flutter), SQL",
 			},
 			&component.ListItem{
 				Prefix: "Softwares:",

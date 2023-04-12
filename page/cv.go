@@ -20,6 +20,9 @@ func (p *CV) Render() vecty.ComponentOrHTML {
 			// Experience section
 			&component.Title{Title: "Experience"},
 			p.renderExperience(),
+			// Project section
+			&component.Title{Title: "Projects"},
+			p.renderProjects(),
 			// Skills section
 			&component.Title{Title: "Skills"},
 			p.renderSkills(),
@@ -30,7 +33,7 @@ func (p *CV) Render() vecty.ComponentOrHTML {
 			&component.Title{Title: "Certifications"},
 			p.renderCertification(),
 			// Interest section
-			&component.Title{Title: "Interest"},
+			&component.Title{Title: "Interests"},
 			p.renderInterest(),
 		),
 		&component.Footer{},
