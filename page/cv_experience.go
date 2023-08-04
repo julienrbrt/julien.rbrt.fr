@@ -13,13 +13,6 @@ func (p *CV) renderExperience() *vecty.HTML {
 		vecty.Markup(vecty.Class("cv-entry")),
 		elem.UnorderedList(
 			&component.Experience{
-				BeginDate:   time.Date(2023, time.April, 10, 0, 0, 0, 0, time.UTC),
-				Location:    "Remote",
-				JobTitle:    "Technical Oversight",
-				Company:     "ATOM Accelerator",
-				Description: "Member of the ATOM Accelerator DAO. Doing technical due diligence on projects applying for grants.",
-			},
-			&component.Experience{
 				BeginDate:   time.Date(2023, time.January, 1, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				JobTitle:    "Software Engineer",
