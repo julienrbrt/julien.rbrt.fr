@@ -14,10 +14,11 @@ func (p *CV) renderProjects() *vecty.HTML {
 		elem.UnorderedList(
 			&component.Experience{
 				BeginDate:   time.Date(2023, time.April, 10, 0, 0, 0, 0, time.UTC),
+				EndDate:     time.Date(2023, time.November, 22, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				JobTitle:    "Technical Oversight",
 				Company:     "ATOM Accelerator",
-				Description: "Member of the ATOM Accelerator DAO. Doing technical due diligence on projects applying for grants.",
+				Description: "Technical Due Diligence Coordinator during the 1st mandate of the ATOM Accelerator DAO.",
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2023, time.March, 31, 0, 0, 0, 0, time.UTC),
