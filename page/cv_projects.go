@@ -14,7 +14,7 @@ func (p *CV) renderProjects() *vecty.HTML {
 		elem.UnorderedList(
 			&component.Experience{
 				BeginDate:   time.Date(2023, time.April, 10, 0, 0, 0, 0, time.UTC),
-				EndDate:     time.Date(2023, time.November, 22, 0, 0, 0, 0, time.UTC),
+				EndDate:     time.Date(2023, time.November, 10, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				JobTitle:    "Technical Oversight",
 				Company:     "ATOM Accelerator",
