@@ -28,7 +28,6 @@ func (p *CV) renderProjects() *vecty.HTML {
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2021, time.January, 15, 0, 0, 0, 0, time.UTC),
-				EndDate:     time.Date(2022, time.August, 3, 0, 0, 0, 0, time.UTC),
 				Location:    "Netherlands",
 				Company:     "WoningFinder",
 				Description: "Automatically react to houses from housing corporation in the Netherlands. Built with Go and Nuxt.",
