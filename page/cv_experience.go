@@ -13,13 +13,6 @@ func (p *CV) renderExperience() *vecty.HTML {
 		vecty.Markup(vecty.Class("cv-entry")),
 		elem.UnorderedList(
 			&component.Experience{
-				BeginDate:   time.Date(2024, time.September, 1, 0, 0, 0, 0, time.UTC),
-				Location:    "Remote",
-				JobTitle:    "Cosmos SDK Engineering Lead",
-				Company:     "Binary Builders",
-				Description: "Cosmos SDK Engineering Lead ⚛, at Interchain GmbH's spin-off, Binary Builders.",
-			},
-			&component.Experience{
 				BeginDate:   time.Date(2023, time.September, 20, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				JobTitle:    "Software Engineer (Part-time)",
@@ -28,11 +21,10 @@ func (p *CV) renderExperience() *vecty.HTML {
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2023, time.January, 1, 0, 0, 0, 0, time.UTC),
-				EndDate:     time.Date(2024, time.September, 1, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				JobTitle:    "Software Engineer",
 				Company:     "Binary Builders",
-				Description: "Cosmos SDK Core Developer ⚛, at Interchain GmbH's spin-off, Binary Builders.",
+				Description: "Software Engineer, at Interchain GmbH's spin-off, Binary Builders. Now focusing, since Jan 2025, on Celestia and Rollkit development while transitioning out of SDK maintenance. Previously Cosmos SDK Engineering Lead from Sep-Dec 2024 and Cosmos SDK Core Developer from Jan 2023 at Binary.",
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2022, time.March, 21, 0, 0, 0, 0, time.UTC),
