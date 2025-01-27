@@ -16,10 +16,10 @@ func (w *Footer) Render() vecty.ComponentOrHTML {
 	return elem.Footer(
 		vecty.Markup(vecty.Class("footer")),
 		elem.Div(
-			vecty.Text("This website is using Vecty - "),
+			vecty.Text("GOOS=js GOARCH=wasm go build . // "),
 			elem.Anchor(
 				vecty.Markup(prop.Href("https://www.github.com/julienrbrt/julien.rbrt.fr")),
-				vecty.Text("(source)"),
+				vecty.Text("source"),
 			),
 		),
 	)
