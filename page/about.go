@@ -23,13 +23,17 @@ func (p *About) Render() vecty.ComponentOrHTML {
 					vecty.Markup(prop.Href("cv")),
 					vecty.Text("Julien Robert"),
 				),
-				vecty.Text(", Blockchain Engineer, based in the Netherland.")),
-			elem.Heading1(vecty.Text("Go and Crypto enthusiast, explore my contributions on "),
+				vecty.Text(", Blockchain Engineer, currently based in the Netherland.")),
+			elem.Heading1(vecty.Text("Go, Blockchain and DeFi enthusiast, explore my contributions on "),
 				elem.Anchor(
 					vecty.Markup(prop.Href("https://github.com/julienrbrt")),
 					vecty.Text("GitHub"),
 				),
-				vecty.Text("."),
+				vecty.Text("or find me on "),
+				elem.Anchor(
+					vecty.Markup(prop.Href("https://x.com/_julienrbrt")),
+					vecty.Text("𝕏"),
+				), vecty.Text("."),
 			),
 			p.renderContact(),
 		),
@@ -38,7 +42,7 @@ func (p *About) Render() vecty.ComponentOrHTML {
 }
 
 func (p *About) renderContact() *vecty.HTML {
-	return elem.Heading1(vecty.Text("For contacting me directly send an email at:"),
+	return elem.Heading1(vecty.Text("To contact me directly, send an email to:"),
 		elem.Preformatted(
 			vecty.Markup(vecty.Class("email")),
 			vecty.Text("julien at rbrt dot fr"),
