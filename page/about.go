@@ -23,7 +23,7 @@ func (p *About) Render() vecty.ComponentOrHTML {
 					vecty.Markup(prop.Href("cv")),
 					vecty.Text("Julien Robert"),
 				),
-				vecty.Text(", Blockchain Engineer, currently based in the Netherland.")),
+				vecty.Text(", Blockchain Engineer, currently based in the Netherlands.")),
 			elem.Heading1(vecty.Text("Go and Crypto enthusiast, explore my contributions on "),
 				elem.Anchor(
 					vecty.Markup(prop.Href("https://github.com/julienrbrt")),
