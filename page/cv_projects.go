@@ -24,7 +24,7 @@ func (p *CV) renderProjects() *vecty.HTML {
 				BeginDate:   time.Date(2023, time.March, 31, 0, 0, 0, 0, time.UTC),
 				Location:    "Remote",
 				Company:     "Cosmonity",
-				Description: "Building Cosmod, the Cosmos SDK Module Registry.",
+				Description: "Building things for the Cosmos ecosystem.",
 			},
 			&component.Experience{
 				BeginDate:   time.Date(2021, time.January, 15, 0, 0, 0, 0, time.UTC),
