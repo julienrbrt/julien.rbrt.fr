@@ -5,7 +5,8 @@ import (
 
 	"github.com/hexops/vecty"
 	"github.com/hexops/vecty/elem"
-	"github.com/julienrbrt/julien.rbrt.fr/component"
+
+	"go.rbrt.fr/julien.rbrt.fr/component"
 )
 
 func (p *CV) renderEducation() *vecty.HTML {

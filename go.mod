@@ -1,4 +1,4 @@
-module github.com/julienrbrt/julien.rbrt.fr
+module go.rbrt.fr/julien.rbrt.fr
 
 go 1.19
 
