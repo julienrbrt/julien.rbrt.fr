@@ -31,8 +31,8 @@ func (p *About) Render() vecty.ComponentOrHTML {
 				),
 				vecty.Text(" or find me on "),
 				elem.Anchor(
-					vecty.Markup(prop.Href("https://x.com/_julienrbrt")),
-					vecty.Text("𝕏"),
+					vecty.Markup(prop.Href("https://bsky.app/profile/julien.rbrt.fr")),
+					vecty.Text("🦋"),
 				), vecty.Text("."),
 			),
 			p.renderContact(),
