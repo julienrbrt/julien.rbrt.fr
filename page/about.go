@@ -5,7 +5,7 @@ import (
 	"github.com/hexops/vecty/elem"
 	"github.com/hexops/vecty/prop"
 
-	"go.rbrt.fr/julien.rbrt.fr/component"
+	"pkg.rbrt.fr/julien.rbrt.fr/component"
 )
 
 // About is the main page.

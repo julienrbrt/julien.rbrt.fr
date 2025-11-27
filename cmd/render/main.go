@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/hexops/vecty"
 
-	"go.rbrt.fr/julien.rbrt.fr/page"
+	"pkg.rbrt.fr/julien.rbrt.fr/page"
 )
 
 func main() {

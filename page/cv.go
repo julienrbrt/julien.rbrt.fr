@@ -4,7 +4,7 @@ import (
 	"github.com/hexops/vecty"
 	"github.com/hexops/vecty/elem"
 
-	"go.rbrt.fr/julien.rbrt.fr/component"
+	"pkg.rbrt.fr/julien.rbrt.fr/component"
 )
 
 // CV is the CV page.

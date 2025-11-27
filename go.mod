@@ -1,4 +1,4 @@
-module go.rbrt.fr/julien.rbrt.fr
+module pkg.rbrt.fr/julien.rbrt.fr
 
 go 1.19
 
