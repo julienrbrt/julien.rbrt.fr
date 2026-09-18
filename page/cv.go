@@ -30,12 +30,12 @@ func (p *CV) Render() vecty.ComponentOrHTML {
 			// Education section
 			&component.Title{Title: "Education"},
 			p.renderEducation(),
+			// Talks section
+			&component.Title{Title: "Talks"},
+			p.renderTalks(),
 			// Certifications section
 			&component.Title{Title: "Certifications"},
 			p.renderCertification(),
-			// Interest section
-			&component.Title{Title: "Interests"},
-			p.renderInterest(),
 		),
 		&component.Footer{},
 	)

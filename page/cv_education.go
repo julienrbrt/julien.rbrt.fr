@@ -32,10 +32,10 @@ func (p *CV) renderEducation() *vecty.HTML {
 			},
 			&component.Experience{
 				BeginDate: time.Date(2013, time.September, 1, 0, 0, 0, 0, time.UTC),
-				EndDate:   time.Date(2016, time.August, 31, 0, 0, 0, 0, time.UTC),
+				EndDate:   time.Date(2016, time.August, 1, 0, 0, 0, 0, time.UTC),
 				Location:  "France",
-				JobTitle:  "Baccalauréat Général Scientifique",
-				Company:   "Lycée Nicéphore-Niépce",
+				JobTitle:  "Baccalauréat général scientifique",
+				Company:   "Lycée Nicéphore Niepce",
 			},
 		),
 	)

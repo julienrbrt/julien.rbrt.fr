@@ -41,11 +41,20 @@ a {
 }
 
 a:hover {
-  color: #222;
+  color: #0e0e61;
+  border-bottom-color: #0e0e61;
 }
 
 a.xp {
   border-bottom: 0.05rem solid rgba(14, 14, 97);
+}
+
+a.co {
+  border-bottom: none;
+}
+
+a.co:hover {
+  border-bottom: 0.05rem solid rgba(14, 14, 97, 0.4);
 }
 
 em {
@@ -100,4 +109,17 @@ blockquote p {
   text-align: center;
   padding-bottom: 5px;
   font-size: 12px;
+}
+
+@media print {
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+  }
+
+  a {
+    border-bottom: none;
+    text-decoration: none;
+  }
 }

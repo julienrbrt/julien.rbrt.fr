@@ -6,6 +6,7 @@ import (
 
 	"github.com/hexops/vecty"
 	"github.com/hexops/vecty/elem"
+	"github.com/hexops/vecty/prop"
 )
 
 // Experience represents the component that display the CV experience
@@ -16,6 +17,7 @@ type Experience struct {
 	Location    string
 	JobTitle    string
 	Company     string
+	URL         string
 	Description string
 }
 
@@ -24,11 +26,24 @@ func (w *Experience) Render() vecty.ComponentOrHTML {
 		elem.ListItem(
 			w.renderDate(),
 			vecty.If(w.JobTitle != "", elem.Strong(vecty.Text(w.JobTitle))),
-			vecty.If(w.JobTitle == "", elem.Strong(vecty.Text(w.Company))),
-			vecty.If(w.JobTitle != "", vecty.Text(fmt.Sprintf(" at %s, %s", w.Company, w.Location))),
+			vecty.If(w.JobTitle == "", elem.Strong(w.renderCompany())),
+			vecty.If(w.JobTitle != "", vecty.Text(" at "), w.renderCompany()),
+			vecty.If(w.JobTitle != "", vecty.Text(fmt.Sprintf(", %s", w.Location))),
 			vecty.If(w.JobTitle == "", vecty.Text(fmt.Sprintf(", %s", w.Location))),
 		),
 		vecty.If(w.Description != "", elem.BlockQuote(vecty.Text(w.Description))),
+	)
+}
+
+func (w *Experience) renderCompany() vecty.ComponentOrHTML {
+	if w.URL == "" {
+		return vecty.Text(w.Company)
+	}
+
+	return elem.Anchor(
+		vecty.Markup(vecty.Class("co")),
+		vecty.Markup(prop.Href(w.URL)),
+		vecty.Text(w.Company),
 	)
 }
 

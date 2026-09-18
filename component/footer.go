@@ -18,7 +18,7 @@ func (w *Footer) Render() vecty.ComponentOrHTML {
 		elem.Div(
 			vecty.Text("GOOS=js GOARCH=wasm go build . // "),
 			elem.Anchor(
-				vecty.Markup(prop.Href("https://tangled.org/julien.rbrt.fr/julien.rbrt.fr")),
+				vecty.Markup(prop.Href("https://github.com/julienrbrt/julien.rbrt.fr")),
 				vecty.Text("source"),
 			),
 		),

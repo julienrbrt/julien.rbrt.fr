@@ -1,6 +1,6 @@
 module pkg.rbrt.fr/julien.rbrt.fr
 
-go 1.19
+go 1.27.0
 
 require (
 	github.com/hexops/vecty v0.6.0
